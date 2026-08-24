@@ -3,17 +3,6 @@
 A GPUI prototype for catching collisions between parallel agent threads while
 both are still running, instead of at merge time.
 
-> **This is not a working product.** There is no agent, no git, no network and
-> no persistence. Every thread, diff and transcript is hardcoded in
-> `src/seed.rs`; agent replies are canned strings; a "turn" is a timer; and the
-> model that decides things in `auto` mode is a line-overlap heuristic. State
-> resets on relaunch. It exists to make the interactions concrete enough to
-> argue about, nothing more.
->
-> Two things are real, because faking them would have proved nothing: anchoring
-> (`PortableAnchor` genuinely re-resolves against a divergent snapshot) and the
-> comment box (a real text field, so IME and paste work).
-
 ## The problem
 
 Each agent thread gets its own worktree, so nobody learns they collided until
@@ -113,3 +102,14 @@ Under `open` there is no readable stderr, so panics append to
 | `src/model/transport.rs` | the seam a backend plugs into: `Envelope`, `Receipt`, `ThreadTransport` |
 | `src/model/overlap.rs` | one index, two questions: who is editing this now, who edited it before |
 | `src/seed.rs` | all content. Two threads share a file with divergent worktrees, or the anchors would have nothing to prove |
+
+> **This is not a working product.** There is no agent, no git, no network and
+> no persistence. Every thread, diff and transcript is hardcoded in
+> `src/seed.rs`; agent replies are canned strings; a "turn" is a timer; and the
+> model that decides things in `auto` mode is a line-overlap heuristic. State
+> resets on relaunch. It exists to make the interactions concrete enough to
+> argue about, nothing more.
+>
+> Two things are real, because faking them would have proved nothing: anchoring
+> (`PortableAnchor` genuinely re-resolves against a divergent snapshot) and the
+> comment box (a real text field, so IME and paste work).
