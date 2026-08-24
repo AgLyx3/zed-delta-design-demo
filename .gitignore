@@ -1,0 +1,8 @@
+# Build output. This runs to several GB -- never commit it.
+target/
+
+# Full-res screen captures. The shareable 720p mp4s under media/ are committed;
+# the .mov originals they came from are not.
+*.mov
+
+.DS_Store

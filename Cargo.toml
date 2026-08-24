@@ -1,0 +1,11 @@
+[package]
+name = "delta-mock"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gpui = { path = "../zed/crates/gpui", default-features = false }
+gpui_platform = { path = "../zed/crates/gpui_platform", default-features = false, features = ["font-kit", "runtime_shaders"] }
+theme = { path = "../zed/crates/theme" }
+ui = { path = "../zed/crates/ui" }
+unicode-segmentation = "1.13"
