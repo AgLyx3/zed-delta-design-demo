@@ -7,8 +7,7 @@ both are still running, instead of at merge time.
 
 Each agent thread gets its own worktree, so nobody learns they collided until
 someone merges — by then both implementations are finished and reconciling them
-costs a day. Textual conflicts are the cheap ones; git announces those reliably.
-The expensive case merges **cleanly** and is still wrong.
+costs a day for the engineering team.
 
 ## Roadmap
 
