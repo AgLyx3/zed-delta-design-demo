@@ -41,6 +41,7 @@ Both are self-driving — the app drives its own state and types into its own
 composer, so nothing depends on synthetic keystrokes.
 
 ### V1 — [`media/v1-comment-and-forward.mp4`](media/v1-comment-and-forward.mp4)
+https://github.com/user-attachments/assets/c5b19969-ce4c-4cdf-a8f8-47df0e1007a8
 
 | | on screen |
 |---|---|
@@ -50,6 +51,7 @@ composer, so nothing depends on synthetic keystrokes.
 | 4 | **Recipient thread.** Re-anchored to its own numbering (`79-91` → `64-76`), `re-anchored 80%` badge, provenance, mention chip intact. |
 
 ### V2 — [`media/v2-proactive-signals.mp4`](media/v2-proactive-signals.mp4)
+https://github.com/user-attachments/assets/80a54006-0adb-4187-8868-3286e1e1de80
 
 | | on screen |
 |---|---|
